@@ -3,17 +3,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.gotti.wurmunlimited</groupId>
-	<artifactId>samplemod</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>noanacondamod</artifactId>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>samplemod</name>
+	<name>noanacondamod</name>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.gotti.wurmunlimited</groupId>
 			<artifactId>server-modlauncher</artifactId>
-			<version>0.18</version>
+			<version>0.25</version>
 		</dependency>
 	</dependencies>
 
