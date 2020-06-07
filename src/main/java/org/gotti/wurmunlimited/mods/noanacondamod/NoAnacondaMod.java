@@ -25,7 +25,7 @@ import com.wurmonline.server.zones.Encounter;
 import com.wurmonline.server.zones.EncounterType;
 import com.wurmonline.server.zones.SpawnTable;
 
-public class NoAnacondaMod implements WurmServerMod, ServerStartedListener, CreatureTemplateIds, ItemTypes, MiscConstants {
+public class NoAnacondaMod implements WurmServerMod, ServerStartedListener, ItemTypes, MiscConstants {
 	
 
 	private static final Logger LOGGER = Logger.getLogger(NoAnacondaMod.class.getName());
@@ -78,7 +78,7 @@ public class NoAnacondaMod implements WurmServerMod, ServerStartedListener, Crea
 			int killed = 0;
 			for (Creature creature : Creatures.getInstance().getCreatures()) {
 				if (creature.getTemplate() != null && creature.getTemplate().getTemplateId() == CreatureTemplateIds.ANACONDA_CID) {
-					creature.die(false);
+					creature.die(false, "NoAnacondaMod");
 					killed++;
 				}
 			}
